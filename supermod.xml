@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<mod
+    name="BangL's SkinPack (SkinLib)" image="icon.png"
+    description="Midnight Lacquer skin for all sniper rifles (Mosin Nagant, Kar98k, Lee-Enfield, M1903) and Gold Standard, Blackout, Blood, Royal Gold and Neon Carbon skins for the Colt M1911 (the last three by Akashi)."
+    author="BangL, Akashi9210"
+    version="1"
+    disable_safe_mode="true"
+    priority="111"
+>
+    <updates>
+        <update identifier="bangls-skinpack">
+            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/bangls-skinpack.json"/>
+        </update>
+    </updates>
+    <hooks>
+        <pre hook_id="lib/setups/setup" script_path="core.lua" />
+    </hooks>
+
+    <dependencies>
+        <dependency name="SkinLib" download_url="https://api.modworkshop.net/mods/55400/download" />
+    </dependencies>
+
+    <localization default="english">
+        <loc file="english.json" language="english" />
+    </localization>
+
+    <assets>
+        <file path="assets/gen/wpn_fps_snp_mosin_b_long_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_mosin_pts/textures/wpn_fps_snp_mosin_b_long_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_mosin_body_grip_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_mosin_pts/textures/wpn_fps_snp_mosin_body_grip_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_mosin_body_standard_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_mosin_pts/textures/wpn_fps_snp_mosin_body_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_mosin_body_target_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_mosin_pts/textures/wpn_fps_snp_mosin_body_target_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_mosin_bolt_standard_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_mosin_pts/textures/wpn_fps_snp_mosin_bolt_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_mosin_m_standard_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_mosin_pts/textures/wpn_fps_snp_mosin_m_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_mosin_upper_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_mosin_pts/textures/wpn_fps_snp_mosin_upper_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_mosin_b_long_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_mosin_pts/textures/wpn_third_snp_mosin_b_long_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_mosin_body_grip_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_mosin_pts/textures/wpn_third_snp_mosin_body_grip_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_mosin_body_standard_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_mosin_pts/textures/wpn_third_snp_mosin_body_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_mosin_body_target_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_mosin_pts/textures/wpn_third_snp_mosin_body_target_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_mosin_bolt_standard_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_mosin_pts/textures/wpn_third_snp_mosin_bolt_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_mosin_o_scope_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_mosin_pts/textures/wpn_third_snp_mosin_o_scope_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_mosin_upper_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_mosin_pts/textures/wpn_third_snp_mosin_upper_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_kar_98k_b_long_midnight_df.texture" name="units/upd_003/weapons/wpn_fps_snp_kar_98k_pts/textures/wpn_fps_snp_kar_98k_b_long_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_kar_98k_body_grip_midnight_df.texture" name="units/upd_003/weapons/wpn_fps_snp_kar_98k_pts/textures/wpn_fps_snp_kar_98k_body_grip_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_kar_98k_midnight_df.texture" name="units/upd_003/weapons/wpn_fps_snp_kar_98k_pts/textures/wpn_fps_snp_kar_98k_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_kar_98k_m_extended_midnight_df.texture" name="units/upd_003/weapons/wpn_fps_snp_kar_98k_pts/textures/wpn_fps_snp_kar_98k_m_extended_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_kar_98k_m_long_midnight_df.texture" name="units/upd_003/weapons/wpn_fps_snp_kar_98k_pts/textures/wpn_fps_snp_kar_98k_m_long_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_kar_98k_o_scope_midnight_df.texture" name="units/upd_003/weapons/wpn_fps_snp_kar_98k_pts/textures/wpn_fps_snp_kar_98k_o_scope_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_kar_98k_pad_big_midnight_df.texture" name="units/upd_003/weapons/wpn_fps_snp_kar_98k_pts/textures/wpn_fps_snp_kar_98k_pad_big_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_kar_98k_b_long_midnight_df.texture" name="units/upd_003/weapons/wpn_third_snp_kar_98k_pts/textures/wpn_third_snp_kar_98k_b_long_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_kar_98k_body_grip_midnight_df.texture" name="units/upd_003/weapons/wpn_third_snp_kar_98k_pts/textures/wpn_third_snp_kar_98k_body_grip_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_kar_98k_midnight_df.texture" name="units/upd_003/weapons/wpn_third_snp_kar_98k_pts/textures/wpn_third_snp_kar_98k_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_kar_98k_m_extended_midnight_df.texture" name="units/upd_003/weapons/wpn_third_snp_kar_98k_pts/textures/wpn_third_snp_kar_98k_m_extended_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_kar_98k_m_long_midnight_df.texture" name="units/upd_003/weapons/wpn_third_snp_kar_98k_pts/textures/wpn_third_snp_kar_98k_m_long_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_kar_98k_pad_big_midnight_df.texture" name="units/upd_003/weapons/wpn_third_snp_kar_98k_pts/textures/wpn_third_snp_kar_98k_pad_big_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_lee_enfield_b_long_midnight_df.texture" name="units/upd_015/weapons/wpn_fps_snp_lee_enfield_pts/textures/wpn_fps_snp_lee_enfield_b_long_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_lee_enfield_b_standard_midnight_df.texture" name="units/upd_015/weapons/wpn_fps_snp_lee_enfield_pts/textures/wpn_fps_snp_lee_enfield_b_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_lee_enfield_body_standard_midnight_df.texture" name="units/upd_015/weapons/wpn_fps_snp_lee_enfield_pts/textures/wpn_fps_snp_lee_enfield_body_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_lee_enfield_cheek_rest_midnight_df.texture" name="units/upd_015/weapons/wpn_fps_snp_lee_enfield_pts/textures/wpn_fps_snp_lee_enfield_cheek_rest_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_lee_enfield_m_extended_midnight_df.texture" name="units/upd_015/weapons/wpn_fps_snp_lee_enfield_pts/textures/wpn_fps_snp_lee_enfield_m_extended_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_lee_enfield_m_standard_midnight_df.texture" name="units/upd_015/weapons/wpn_fps_snp_lee_enfield_pts/textures/wpn_fps_snp_lee_enfield_m_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_lee_enfield_ns_coned_midnight_df.texture" name="units/upd_015/weapons/wpn_fps_snp_lee_enfield_pts/textures/wpn_fps_snp_lee_enfield_ns_coned_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_lee_enfield_pad_buffered_midnight_df.texture" name="units/upd_015/weapons/wpn_fps_snp_lee_enfield_pts/textures/wpn_fps_snp_lee_enfield_pad_buffered_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_lee_enfield_s_standard_midnight_df.texture" name="units/upd_015/weapons/wpn_fps_snp_lee_enfield_pts/textures/wpn_fps_snp_lee_enfield_s_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_lee_enfield_b_long_midnight_df.texture" name="units/upd_015/weapons/wpn_third_snp_lee_enfield_pts/textures/wpn_third_snp_lee_enfield_b_long_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_lee_enfield_b_standard_midnight_df.texture" name="units/upd_015/weapons/wpn_third_snp_lee_enfield_pts/textures/wpn_third_snp_lee_enfield_b_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_lee_enfield_body_standard_midnight_df.texture" name="units/upd_015/weapons/wpn_third_snp_lee_enfield_pts/textures/wpn_third_snp_lee_enfield_body_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_lee_enfield_cheek_rest_midnight_df.texture" name="units/upd_015/weapons/wpn_third_snp_lee_enfield_pts/textures/wpn_third_snp_lee_enfield_cheek_rest_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_lee_enfield_m_extended_midnight_df.texture" name="units/upd_015/weapons/wpn_third_snp_lee_enfield_pts/textures/wpn_third_snp_lee_enfield_m_extended_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_lee_enfield_m_standard_midnight_df.texture" name="units/upd_015/weapons/wpn_third_snp_lee_enfield_pts/textures/wpn_third_snp_lee_enfield_m_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_lee_enfield_ns_coned_midnight_df.texture" name="units/upd_015/weapons/wpn_third_snp_lee_enfield_pts/textures/wpn_third_snp_lee_enfield_ns_coned_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_lee_enfield_pad_buffered_midnight_df.texture" name="units/upd_015/weapons/wpn_third_snp_lee_enfield_pts/textures/wpn_third_snp_lee_enfield_pad_buffered_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_lee_enfield_s_standard_midnight_df.texture" name="units/upd_015/weapons/wpn_third_snp_lee_enfield_pts/textures/wpn_third_snp_lee_enfield_s_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_m1903_b_standard_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_m1903_pts/textures/wpn_fps_snp_m1903_b_standard_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_m1903_body_type_c_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_m1903_pts/textures/wpn_fps_snp_m1903_body_type_c_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_m1903_body_type_s_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_m1903_pts/textures/wpn_fps_snp_m1903_body_type_s_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_m1903_m_extended_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_m1903_pts/textures/wpn_fps_snp_m1903_m_extended_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_m1903_ns_mclean_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_m1903_pts/textures/wpn_fps_snp_m1903_ns_mclean_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_snp_m1903_upper_midnight_df.texture" name="units/vanilla/weapons/wpn_fps_snp_m1903_pts/textures/wpn_fps_snp_m1903_upper_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_m1903_body_type_s_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_m1903_pts/textures/wpn_third_snp_m1903_body_type_s_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_m1903_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_m1903_pts/textures/wpn_third_snp_m1903_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_m1903_m_extended_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_m1903_pts/textures/wpn_third_snp_m1903_m_extended_midnight_df.texture" />
+        <file path="assets/gen/wpn_third_snp_m1903_ns_mclean_midnight_df.texture" name="units/vanilla/weapons/wpn_third_snp_m1903_pts/textures/wpn_third_snp_m1903_ns_mclean_midnight_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_gold_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_gold_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_fg_tommy_gold_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_fg_tommy_gold_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_m_banana_gold_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_m_banana_gold_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_m_extended_gold_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_m_extended_gold_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_ns_cutts_gold_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_ns_cutts_gold_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_s_wooden_gold_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_s_wooden_gold_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_gold_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_gold_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_fg_tommy_gold_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_fg_tommy_gold_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_m_banana_gold_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_m_banana_gold_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_m_extended_gold_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_m_extended_gold_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_ns_cutts_gold_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_ns_cutts_gold_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_s_wooden_gold_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_s_wooden_gold_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_black_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_black_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_fg_tommy_black_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_fg_tommy_black_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_m_banana_black_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_m_banana_black_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_m_extended_black_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_m_extended_black_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_ns_cutts_black_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_ns_cutts_black_df.texture" />
+        <file path="assets/gen/wpn_fps_pis_m1911_s_wooden_black_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/wpn_fps_pis_m1911_s_wooden_black_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_black_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_black_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_fg_tommy_black_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_fg_tommy_black_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_m_banana_black_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_m_banana_black_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_m_extended_black_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_m_extended_black_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_ns_cutts_black_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_ns_cutts_black_df.texture" />
+        <file path="assets/gen/wpn_third_pis_m1911_s_wooden_black_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_s_wooden_black_df.texture" />
+        <file path="assets/prebuilt/akashi_m1911_blood_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/akashi_m1911_blood_df.texture" />
+        <file path="assets/prebuilt/akashi_m1911_gold_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/akashi_m1911_gold_df.texture" />
+    </assets>
+</mod>
