@@ -710,6 +710,260 @@ Hooks:Add("SkinLibCollectData", "BangL.WeaponSkins.SkinLibCollectData",
                 })
         )
         self.RegisterSkin(
+            SL_Skin:new("bangl_ws_ithaca_nyan", "ithaca")
+                :set_name_id("bangl_ws_ithaca_nyan")
+                :set_weapon_desc_id("bangl_ws_ithaca_nyan_desc")
+                :set_weapon_name_id("bangl_ws_ithaca_nyan_name")
+                :set_gold_price(50)
+                :set_droppable(true)
+                :set_rarity(LootDropTweakData.RARITY_RARE)
+                :add_parts({
+                    SL_Part:new("wpn_fps_sho_ithaca_b_heat_shield_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_b_heat_shield")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_heat_shield",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_heat_shield_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_heat_shield_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_heat_shield_gsm")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_b_heat_shield",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_heat_shield_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_heat_shield_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_heat_shield_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_b_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_b_reinforced_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_b_reinforced")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_reinforced",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_reinforced_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_reinforced_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_reinforced_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_b_reinforced",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_reinforced_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_reinforced_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_reinforced_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_b_standard_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_b_standard")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_long",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_long_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_long_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_long_gsm")
+                        :add_tps_material("wpn_fps_sho_ithaca_b_long",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_long_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_long_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_long_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_body_standard_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_body_standard")
+                        :add_fps_material("wpn_fps_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_lifter_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_lifter")
+                        :add_fps_material("wpn_fps_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_m_standard_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_m_standard")
+                        :add_fps_material("brass",
+                            nil,
+                            "units/vanilla/weapons/ammo/shl_12ga_nyan_df",
+                            "units/vanilla/weapons/ammo/shl_12ga_gsm")
+                        :add_fps_material("plastic",
+                            nil,
+                            "units/vanilla/weapons/ammo/shl_12ga_nyan_df",
+                            "units/vanilla/weapons/ammo/shl_12ga_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_ns_brake_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_ns_brake")
+                        :add_fps_material("wpn_fps_sho_ithaca_ns_brake",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_ns_brake_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_ns_brake_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_ns_brake_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_ns_brake",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_ns_brake_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_ns_brake_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_ns_brake_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_s_cheek_rest_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_s_cheek_rest")
+                        :add_fps_material("wpn_fps_sho_ithaca_s_cheek_rest",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_cheek_rest_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_cheek_rest_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_cheek_rest_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_s_cheek_rest",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_cheek_rest_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_cheek_rest_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_cheek_rest_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_s_pistol_grip_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_s_pistol_grip")
+                        :add_fps_material("wpn_fps_sho_ithaca_s_pistol_grip",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_pistol_grip_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_pistol_grip_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_pistol_grip_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_s_pistol_grip",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_pistol_grip_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_pistol_grip_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_pistol_grip_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_s_standard_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_s_standard")
+                        :add_fps_material("wpn_fps_sho_ithaca_s_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_s_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_sl_standard_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_sl_standard")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_b_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_trigger_nyan", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_trigger")
+                        :add_fps_material("wpn_fps_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nyan_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_gsm")
+                })
+        )
+        self.RegisterSkin(
+            SL_Skin:new("bangl_ws_ithaca_rasta", "ithaca")
+                :set_name_id("bangl_ws_ithaca_rasta")
+                :set_weapon_desc_id("bangl_ws_ithaca_rasta_desc")
+                :set_weapon_name_id("bangl_ws_ithaca_rasta_name")
+                :set_gold_price(50)
+                :set_droppable(true)
+                :set_rarity(LootDropTweakData.RARITY_UNCOMMON)
+                :add_parts({
+                    SL_Part:new("wpn_fps_sho_ithaca_b_heat_shield_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_b_heat_shield")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_heat_shield",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_heat_shield_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_heat_shield_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_heat_shield_gsm")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_b_heat_shield",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_heat_shield_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_heat_shield_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_heat_shield_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_b_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_b_reinforced_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_b_reinforced")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_reinforced",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_reinforced_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_reinforced_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_reinforced_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_b_reinforced",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_reinforced_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_reinforced_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_reinforced_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_b_standard_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_b_standard")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_long",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_long_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_long_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_long_gsm")
+                        :add_tps_material("wpn_fps_sho_ithaca_b_long",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_long_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_long_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_long_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_body_standard_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_body_standard")
+                        :add_fps_material("wpn_fps_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_lifter_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_lifter")
+                        :add_fps_material("wpn_fps_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_m_standard_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_m_standard")
+                        :add_fps_material("brass",
+                            nil,
+                            "units/vanilla/weapons/ammo/shl_12ga_rasta_df",
+                            "units/vanilla/weapons/ammo/shl_12ga_gsm")
+                        :add_fps_material("plastic",
+                            nil,
+                            "units/vanilla/weapons/ammo/shl_12ga_rasta_df",
+                            "units/vanilla/weapons/ammo/shl_12ga_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_ns_brake_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_ns_brake")
+                        :add_fps_material("wpn_fps_sho_ithaca_ns_brake",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_ns_brake_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_ns_brake_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_ns_brake_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_ns_brake",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_ns_brake_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_ns_brake_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_ns_brake_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_s_cheek_rest_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_s_cheek_rest")
+                        :add_fps_material("wpn_fps_sho_ithaca_s_cheek_rest",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_cheek_rest_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_cheek_rest_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_cheek_rest_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_s_cheek_rest",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_cheek_rest_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_cheek_rest_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_cheek_rest_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_s_pistol_grip_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_s_pistol_grip")
+                        :add_fps_material("wpn_fps_sho_ithaca_s_pistol_grip",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_pistol_grip_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_pistol_grip_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_pistol_grip_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_s_pistol_grip",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_pistol_grip_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_pistol_grip_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_pistol_grip_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_s_standard_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_s_standard")
+                        :add_fps_material("wpn_fps_sho_ithaca_s_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_s_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_sl_standard_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_sl_standard")
+                        :add_fps_material("wpn_fps_sho_ithaca_b_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_b_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_gsm"),
+                    SL_Part:new("wpn_fps_sho_ithaca_trigger_rasta", "wpn_fps_sho_ithaca", "wpn_fps_sho_ithaca_trigger")
+                        :add_fps_material("wpn_fps_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_gsm")
+                        :add_tps_material("wpn_third_sho_ithaca_body_standard",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nm",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_rasta_df",
+                            "units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_gsm")
+                })
+        )
+        self.RegisterSkin(
             SL_Skin:new("akashi_ws_m1911_blood", "m1911")
                 :set_name_id("akashi_ws_m1911_blood")
                 :set_weapon_desc_id("akashi_ws_m1911_blood_desc")

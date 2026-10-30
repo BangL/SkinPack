@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <mod
     name="BangL's SkinPack (SkinLib)" image="icon.png"
-    description="Midnight Lacquer skin for all sniper rifles (Mosin Nagant, Kar98k, Lee-Enfield, M1903) and Gold Standard, Blackout, Blood, Royal Gold and Neon Carbon skins for the Colt M1911 (the last three by Akashi)."
+    description="Midnight Lacquer skin for all sniper rifles (Mosin Nagant, Kar98k, Lee-Enfield, M1903), Nyan Cat and Rasta skins for the Ithaca 37 and Gold Standard, Blackout, Blood, Royal Gold and Neon Carbon skins for the Colt M1911 (the last three by Akashi)."
     author="BangL, Akashi9210"
-    version="1"
+    version="2"
     disable_safe_mode="true"
     priority="111"
 >
@@ -104,6 +104,44 @@
         <file path="assets/gen/wpn_third_pis_m1911_m_extended_black_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_m_extended_black_df.texture" />
         <file path="assets/gen/wpn_third_pis_m1911_ns_cutts_black_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_ns_cutts_black_df.texture" />
         <file path="assets/gen/wpn_third_pis_m1911_s_wooden_black_df.texture" name="units/vanilla/weapons/wpn_third_pis_m1911_pts/textures/wpn_third_pis_m1911_s_wooden_black_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_b_heat_shield_nyan_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_heat_shield_nyan_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_b_long_nyan_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_long_nyan_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_b_reinforced_nyan_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_reinforced_nyan_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_b_standard_nyan_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_nyan_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_body_standard_nyan_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_nyan_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_ns_brake_nyan_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_ns_brake_nyan_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_s_cheek_rest_nyan_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_cheek_rest_nyan_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_s_pistol_grip_nyan_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_pistol_grip_nyan_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_s_standard_nyan_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_standard_nyan_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_b_heat_shield_nyan_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_heat_shield_nyan_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_b_long_nyan_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_long_nyan_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_b_reinforced_nyan_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_reinforced_nyan_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_b_standard_nyan_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_nyan_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_body_standard_nyan_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_nyan_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_ns_brake_nyan_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_ns_brake_nyan_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_s_cheek_rest_nyan_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_cheek_rest_nyan_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_s_pistol_grip_nyan_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_pistol_grip_nyan_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_s_standard_nyan_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_standard_nyan_df.texture" />
+        <file path="assets/gen/shl_12ga_nyan_df.texture" name="units/vanilla/weapons/ammo/shl_12ga_nyan_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_b_heat_shield_rasta_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_heat_shield_rasta_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_b_long_rasta_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_long_rasta_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_b_reinforced_rasta_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_reinforced_rasta_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_b_standard_rasta_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_b_standard_rasta_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_body_standard_rasta_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_body_standard_rasta_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_ns_brake_rasta_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_ns_brake_rasta_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_s_cheek_rest_rasta_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_cheek_rest_rasta_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_s_pistol_grip_rasta_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_pistol_grip_rasta_df.texture" />
+        <file path="assets/gen/wpn_fps_sho_ithaca_s_standard_rasta_df.texture" name="units/upd_017/weapons/wpn_fps_sho_ithaca_pts/textures/wpn_fps_sho_ithaca_s_standard_rasta_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_b_heat_shield_rasta_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_heat_shield_rasta_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_b_long_rasta_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_long_rasta_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_b_reinforced_rasta_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_reinforced_rasta_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_b_standard_rasta_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_b_standard_rasta_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_body_standard_rasta_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_body_standard_rasta_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_ns_brake_rasta_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_ns_brake_rasta_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_s_cheek_rest_rasta_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_cheek_rest_rasta_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_s_pistol_grip_rasta_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_pistol_grip_rasta_df.texture" />
+        <file path="assets/gen/wpn_third_sho_ithaca_s_standard_rasta_df.texture" name="units/upd_017/weapons/wpn_third_sho_ithaca_pts/textures/wpn_third_sho_ithaca_s_standard_rasta_df.texture" />
+        <file path="assets/gen/shl_12ga_rasta_df.texture" name="units/vanilla/weapons/ammo/shl_12ga_rasta_df.texture" />
         <file path="assets/prebuilt/akashi_m1911_blood_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/akashi_m1911_blood_df.texture" />
         <file path="assets/prebuilt/akashi_m1911_gold_df.texture" name="units/vanilla/weapons/wpn_fps_pis_m1911_pts/textures/akashi_m1911_gold_df.texture" />
     </assets>

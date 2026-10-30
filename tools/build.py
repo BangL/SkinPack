@@ -21,7 +21,7 @@ import tempfile
 import zlib
 
 import numpy as np
-from PIL import Image, ImageOps
+from PIL import Image, ImageFilter, ImageOps
 
 MOD_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.dont_write_bytecode = True  # packages_txt lives in another mod, do not litter its folder with __pycache__
@@ -76,6 +76,32 @@ def gold(img):
     return blend(plated, img, wood_mask(img))
 
 
+def nyan(img):
+    """Wood and grips in rainbow bands, metal as dark blue space with a few pixel stars; the shading of the original stays visible."""
+    gray = np.asarray(ImageOps.autocontrast(ImageOps.grayscale(img.convert("RGB")), cutoff=1)).astype(np.float32) / 255
+    height, width = gray.shape
+    y = np.indices(gray.shape, dtype=np.float32)[0]
+    index = np.floor(y / height * len(RAINBOW) * 2).astype(int) % len(RAINBOW)
+    bands = np.array(RAINBOW, dtype=np.float32)[index]
+    rainbow = bands * (0.55 + 0.45 * gray ** 1.1)[..., None]
+    space = np.array([4, 10, 38], dtype=np.float32) + np.array([20, 34, 70], dtype=np.float32) * (gray ** 1.3)[..., None]
+    rng = np.random.RandomState(width * 31 + height)
+    star = rng.random_sample(gray.shape) > 0.9985
+    star = np.asarray(Image.fromarray((star * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(3))).astype(np.float32)[..., None] / 255
+    space = space * (1 - star) + np.array([255, 255, 255], dtype=np.float32) * star
+    return blend(Image.fromarray(space.clip(0, 255).round().astype(np.uint8)), Image.fromarray(rainbow.clip(0, 255).round().astype(np.uint8)), wood_mask(img))
+
+
+def rasta(img):
+    """Wood and grips in red, yellow and green bands, metal blackened; the shading of the original stays visible."""
+    gray = np.asarray(ImageOps.autocontrast(ImageOps.grayscale(img.convert("RGB")), cutoff=1)).astype(np.float32) / 255
+    y = np.indices(gray.shape, dtype=np.float32)[0]
+    index = np.floor(y / gray.shape[0] * len(RASTA) * 2).astype(int) % len(RASTA)
+    bands = np.array(RASTA, dtype=np.float32)[index] * (0.55 + 0.45 * gray ** 1.1)[..., None]
+    black = np.array([3, 3, 3], dtype=np.float32) + np.array([40, 38, 34], dtype=np.float32) * (gray ** 1.6)[..., None]
+    return blend(Image.fromarray(black.clip(0, 255).round().astype(np.uint8)), Image.fromarray(bands.clip(0, 255).round().astype(np.uint8)), wood_mask(img))
+
+
 SKINS = [
     {
         "id": "bangl_ws_mosin_midnight", "suffix": "midnight", "weapon": "mosin", "factory": "wpn_fps_snp_mosin",
@@ -110,6 +136,16 @@ SKINS = [
         "name": "Blackout", "desc": "Blued to a flat black, no shine to give away the position",
         "exclude_parts": ("wpn_fps_pis_m1911_b_standard",),
     },
+    {
+        "id": "bangl_ws_ithaca_nyan", "suffix": "nyan", "weapon": "ithaca", "factory": "wpn_fps_sho_ithaca",
+        "recolor": nyan, "price": 50, "rarity": "RARE",
+        "name": "Nyan", "desc": "Leaves a rainbow trail. Meow.",
+    },
+    {
+        "id": "bangl_ws_ithaca_rasta", "suffix": "rasta", "weapon": "ithaca", "factory": "wpn_fps_sho_ithaca",
+        "recolor": rasta, "price": 50, "rarity": "UNCOMMON",
+        "name": "Rasta", "desc": "One love, one barrel, two shells",
+    },
 ]
 # hand painted M1911 skins taken over from skinpack_akashi (textures copied from AKASHI_DIR, ids kept for existing inventories)
 AKASHI_DIR = os.path.join(MOD_DIR, "assets", "prebuilt")  # hand made textures, shipped as they are (assets/gen is wiped by every build)
@@ -126,6 +162,8 @@ AKASHI_PARTS = [
     ("sl_standard", "wpn_fps_pis_m1911"),
     ("dh_hammer", "wpn_fps_pis_m1911"),
 ]
+RAINBOW = ((255, 0, 0), (255, 153, 0), (255, 255, 0), (51, 255, 0), (0, 153, 255), (102, 51, 255))  # nyan cat trail
+RASTA = ((206, 17, 38), (252, 209, 22), (0, 158, 73))
 STRIPES = 5  # black+violet periods across the texture width
 VIOLET_SHARE = 0.25  # part of a period that is violet
 KEEP_VANILLA = ("wpn_fps_bullets_df", "30_06_df")  # shared by several weapons, not recolored
@@ -368,9 +406,9 @@ def main():
         f.write("""<?xml version="1.0"?>
 <mod
     name="BangL's SkinPack (SkinLib)" image="icon.png"
-    description="Midnight Lacquer skin for all sniper rifles (Mosin Nagant, Kar98k, Lee-Enfield, M1903) and Gold Standard, Blackout, Blood, Royal Gold and Neon Carbon skins for the Colt M1911 (the last three by Akashi)."
+    description="Midnight Lacquer skin for all sniper rifles (Mosin Nagant, Kar98k, Lee-Enfield, M1903), Nyan Cat and Rasta skins for the Ithaca 37 and Gold Standard, Blackout, Blood, Royal Gold and Neon Carbon skins for the Colt M1911 (the last three by Akashi)."
     author="BangL, Akashi9210"
-    version="1"
+    version="2"
     disable_safe_mode="true"
     priority="111"
 >
