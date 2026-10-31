@@ -9,7 +9,7 @@
 >
     <updates>
         <update identifier="bangls-skinpack">
-            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/bangls-skinpack.json"/>
+            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/bangls-skinpack.json" patchnotes="https://github.com/BangL/SkinPack/blob/master/CHANGELOG.md"/>
         </update>
     </updates>
     <hooks>
