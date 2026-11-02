@@ -336,7 +336,6 @@ def main():
         lua.append("            SL_Skin:new(%s, %s)" % (lua_str(skin["id"]), lua_str(skin["weapon"])))
         lua.append("                :set_name_id(%s)" % lua_str(skin["id"]))
         lua.append("                :set_weapon_desc_id(%s)" % lua_str(skin["id"] + "_desc"))
-        lua.append("                :set_weapon_name_id(%s)" % lua_str(skin["id"] + "_name"))
         lua.append("                :set_gold_price(%d)" % skin["price"])
         lua.append("                :set_droppable(true)")
         lua.append("                :set_rarity(LootDropTweakData.RARITY_%s)" % skin["rarity"])
@@ -367,14 +366,12 @@ def main():
         lua.append("        )")
         loc[skin["id"]] = skin["name"]
         loc[skin["id"] + "_desc"] = skin["desc"]
-        loc[skin["id"] + "_name"] = skin["name"]
     for skin in AKASHI_SKINS:
         skin_id = "akashi_ws_m1911_" + skin["id"]
         lua.append("        self.RegisterSkin(")
         lua.append("            SL_Skin:new(%s, \"m1911\")" % lua_str(skin_id))
         lua.append("                :set_name_id(%s)" % lua_str(skin_id))
         lua.append("                :set_weapon_desc_id(%s)" % lua_str(skin_id + "_desc"))
-        lua.append("                :set_weapon_name_id(%s)" % lua_str(skin_id + "_name"))
         lua.append("                :set_gold_price(50)")
         lua.append("                :set_droppable(true)")
         lua.append("                :set_rarity(LootDropTweakData.RARITY_COMMON)")

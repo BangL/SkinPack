@@ -3,7 +3,7 @@
     name="BangL's SkinPack (SkinLib)" image="icon.png"
     description="Midnight Lacquer skin for all sniper rifles (Mosin Nagant, Kar98k, Lee-Enfield, M1903), Nyan Cat and Rasta skins for the Ithaca 37 and Gold Standard, Blackout, Blood, Royal Gold and Neon Carbon skins for the Colt M1911 (the last three by Akashi)."
     author="BangL, Akashi9210"
-    version="2"
+    version="3"
     disable_safe_mode="true"
     priority="111"
 >
